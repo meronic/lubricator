@@ -1,7 +1,12 @@
-{
-    "crane": "1",
-    "lubricator": "11",
-    "st_power": "0",
-    "st_warning": "0",
-    "state": "정지"
-}
+    "1": {
+        "1": {"st_power": "1", "st_warning": "0", "state": "정상"},
+        "2": {"st_power": "1", "st_warning": "1", "state": "경고"},
+        "3": {"st_power": "1", "st_warning": "0", "state": "정상"},
+        "4": {"st_power": "1", "st_warning": "1", "state": "경고"},
+        "5": {"st_power": "0", "st_warning": "0", "state": "정지"},
+        "6": {"st_power": "1", "st_warning": "1", "state": "경고"},
+        "7": {"st_power": "0", "st_warning": "0", "state": "연결끊김"},
+        "8": {"st_power": "1", "st_warning": "0", "state": "경고"},
+        "9": {"st_power": "1", "st_warning": "0", "state": "정상"},
+        "10": {"st_power": "1", "st_warning": "0", "state": "정상"},
+        "11": {"st_power": "0", "st_warning": "0", "state": "정지"},
