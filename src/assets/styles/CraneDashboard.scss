@@ -1,18 +1,21 @@
 /* Base Styling */
+
 .crane-dashboard-container {
+    
     font-family: 'Arial', sans-serif;
-    padding: 2rem;
+    padding: 1rem 4rem;
     background-color: #f7f7f7;
     color: #333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 0px auto;
 }
 
 h1 {
+    display: none;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5px;
     text-align: center;
     color: #2C3E50;
 }
@@ -33,6 +36,7 @@ h1 {
     }
   
     h1 {
+        display: none;
         font-size: 1.25rem;
     }
   
@@ -42,20 +46,22 @@ h1 {
 }
 
 /* Mobile View: Screen width less than 768 pixels */
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
     .crane-dashboard-container {
         padding: 1rem;
-        margin: 1rem auto;
+        margin: 4px auto;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
     }
 
     h1 {
-        font-size: 1.125rem;
+        display: block;
+        font-size: 1.325rem;
     }
 
     .crane-grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.75rem;
     }
+
 }

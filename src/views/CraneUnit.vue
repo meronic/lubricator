@@ -1,19 +1,20 @@
 <template>
   <div class="crane-container">
-    <h2 class="crane-title">Goliath {{ craneId }} Crane</h2>
+    <h2 class="crane-title">G/C {{ craneId }}호기</h2>
     <div class="lubricator-container">
       <div v-for="lubricator in lubricators" :key="lubricator.lubricator" class="lubricator">
-        <h4> {{ lubricator.lubricator }} 번 도유기</h4>
+        <h4>  {{ lubricator.lubricator }}번 도유기</h4>
         <p>상태 : {{ lubricator.state }}</p>
 
         <!-- Display green icon for 'normal' status -->
-        <i v-if="lubricator.state === 'running'" class="icon icon-green">✅</i>
+        <p v-if="lubricator.state === '정상'" class="icon icon-green">🟢</p>
 
         <!-- Display red icon for 'warning' status -->
-        <i v-else-if="lubricator.state === 'warning'" class="icon icon-red">⚠️</i>
+        <p v-else-if="lubricator.state === '경고'" class="icon icon-red">⚠️</p>
 
-         <!-- Display poweroff icon for other states -->
-         <i v-else class="icon icon-poweroff">🔌</i> <!-- Using plug emoji for poweroff icon as an example -->
+        <p v-else-if="lubricator.state === '정지'" class="icon icon-red">🔴</p>
+
+         <p v-else class="icon">🔌</p> 
 
       </div>
     </div>

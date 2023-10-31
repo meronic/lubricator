@@ -1,16 +1,28 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import CraneDashboard from '../views/CraneDashboard.vue';
+import CraneDashboard2 from '../views/CraneDashboard2.vue';
 import CraneMessage from '../views/CraneMessage.vue';
+
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'main_page1',
     component: CraneDashboard,
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/1',
+    name: 'page1',
+    component: CraneDashboard,
+  },
+  {
+    path: '/2',
+    name: 'page2',
+    component: CraneDashboard2,
+  },
+  {
+    path: '/message',
+    name: 'Message',
     component: CraneMessage,
   },
 ];
